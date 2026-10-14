@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - Soyl</title>
+<link rel="icon" type="image/png" href="soyl_icon.png">
+<link rel="apple-touch-icon" href="soyl_icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="site-nav" aria-label="Main">
+  <div class="site-nav-in">
+    <a class="brand" href="index.html"><img src="soyl_icon.png" alt="" width="32" height="32" onerror="this.style.display='none'"><span>Soyl</span></a>
+    <div class="links">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#commands">Commands</a>
+      <a href="index.html#add">Add</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="Soyl_ToS.html">Terms</a>
+    </div>
+  </div>
+</nav>
+
+<header class="top small">
+  <div class="inner">
+    <h1>Privacy Policy</h1>
+    <p>How Soyl collects, uses, and stores data when you use it in a Discord server.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="toc" aria-label="Contents">
+    <p>On this page</p>
+    <a href="#overview">Overview</a>
+    <a href="#collect">Data we collect</a>
+    <a href="#use">How we use it</a>
+    <a href="#storage">Storage and security</a>
+    <a href="#third">Third parties</a>
+    <a href="#retention">Retention and deletion</a>
+    <a href="#rights">Your choices</a>
+    <a href="#children">Children</a>
+    <a href="#changes">Changes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>Soyl is a Discord bot that provides moderation, tickets, leveling, welcome messages, introductions, autoresponders, voice channel tools, music, AFK status, counting, and server logging. This policy explains what data the bot handles when it is added to a server or when you use its commands.</p>
+      <p>By using the bot or inviting it to a server, you agree to this policy. Last updated: October 14, 2026.</p>
+    </section>
+
+    <section id="collect">
+      <h2>Data we collect</h2>
+      <p>The bot only stores what its features need. Here is what is saved, by feature:</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Feature</th><th>What is stored</th></tr></thead>
+          <tbody>
+            <tr><td>Server settings</td><td>Server ID, channel IDs, role IDs, message IDs, and the text you configure (welcome messages, embed text, autoresponder triggers and replies, ticket panel text, intro questions).</td></tr>
+            <tr><td>Leveling</td><td>Your user ID and server ID, XP, message count, time spent in voice channels, and the time of your last XP-earning message.</td></tr>
+            <tr><td>AFK</td><td>Your user ID, server ID, AFK reason, your original nickname, and any notes or reminders other members leave for you while you are AFK.</td></tr>
+            <tr><td>Profile picture event</td><td>User IDs of participants and the IDs of their submission messages.</td></tr>
+            <tr><td>Counting game</td><td>Current count, best count, and the ID of the last user who counted.</td></tr>
+            <tr><td>Tickets</td><td>Ticket channels are created in your server. The ticket owner's user ID is stored in the channel topic. Ticket conversations stay in Discord.</td></tr>
+            <tr><td>Create VC</td><td>IDs of temporary voice rooms and the user ID of each room's owner while the room exists.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The bot also reads messages in channels it can see, because several features depend on message content (counting, autoresponders, nickname and profile picture channels, channel restrictions, leveling, and AFK). Message content is processed to run these features. It is not saved to our database, except for the AFK notes and autoresponder text described above.</p>
+      <p>Introduction answers are posted by the bot as a message in the channel your server chose. They are stored by Discord, not in our database.</p>
+      <p><strong>Server logging.</strong> If a server administrator turns on the logging feature, the bot sends records of server events (such as moderation actions, member activity, messages, channels, roles, and voice activity) to log channels inside that server. Those logs live in Discord and are controlled by that server's administrators.</p>
+      <div class="note">We do not collect your email address, password, payment details, or location. Music playback is not recorded and no audio is stored.</div>
+    </section>
+
+    <section id="use">
+      <h2>How we use it</h2>
+      <ul>
+        <li>To run the features listed above and remember each server's settings between restarts.</li>
+        <li>To calculate levels, ranks, and leaderboards.</li>
+        <li>To enforce moderation actions that a server's staff choose to take.</li>
+        <li>To fix bugs and keep the bot running.</li>
+      </ul>
+      <p>We do not sell your data, use it for advertising, or use it to build profiles outside the bot's features.</p>
+    </section>
+
+    <section id="storage">
+      <h2>Storage and security</h2>
+      <p>Data is stored in a database on the server that hosts the bot. We limit access to the bot owner and take reasonable steps to protect it. No system is completely secure, so we cannot guarantee absolute security.</p>
+      <p>Some temporary data, such as the music queue and the list of roles removed by a "strip" command, is kept only in memory and is lost when the bot restarts.</p>
+    </section>
+
+    <section id="third">
+      <h2>Third parties</h2>
+      <ul>
+        <li><strong>Discord.</strong> The bot runs on Discord and is subject to the <a href="https://discord.com/privacy" rel="noopener">Discord Privacy Policy</a>.</li>
+        <li><strong>YouTube.</strong> When you use the music commands, your search text or link is sent to YouTube to find the audio.</li>
+        <li><strong>Spotify.</strong> If you paste a Spotify link, the link is sent to Spotify's public oEmbed service to read the song title. Audio is not streamed from Spotify.</li>
+        <li><strong>Hosting provider.</strong> The bot is hosted by NyctoHost, which may process data as part of providing the service.</li>
+      </ul>
+      <p>We do not share your data with any other third parties.</p>
+    </section>
+
+    <section id="retention">
+      <h2>Retention and deletion</h2>
+      <p>We keep data for as long as the bot is in the server or until it is no longer needed for a feature. You can remove data in these ways:</p>
+      <ul>
+        <li>Server admins can reset leveling for a member with <code>/level reset</code> or for the whole server with <code>/level resetall</code>.</li>
+        <li>Server admins can disable or clear features such as welcome messages, autoresponders, tickets, and counting using their commands.</li>
+        <li>Your AFK data is deleted when you send a message after going AFK.</li>
+        <li>You or a server admin can ask us to delete stored data by contacting us (see below). Removing the bot from a server does not automatically delete its stored data, so please contact us if you want it erased.</li>
+      </ul>
+    </section>
+
+    <section id="rights">
+      <h2>Your choices</h2>
+      <p>You can ask us what data we hold about you, ask us to correct or delete it, or stop using the bot at any time. Depending on where you live, you may have additional rights under local privacy laws. We will respond to reasonable requests as soon as we can.</p>
+    </section>
+
+    <section id="children">
+      <h2>Children</h2>
+      <p>The bot is not meant for children under 13, or under the minimum age required by Discord in your country. If you believe a child's data has been stored, contact us and we will delete it.</p>
+    </section>
+
+    <section id="changes">
+      <h2>Changes to this policy</h2>
+      <p>We may update this policy when the bot changes. The "last updated" date at the top shows the latest version. Continuing to use the bot after a change means you accept the updated policy.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For questions or data requests, reach us here:</p>
+      <div class="actions">
+        <a class="btn" href="https://discord.com/oauth2/authorize?client_id=1551622113327059024&amp;permissions=8&amp;integration_type=0&amp;scope=bot+applications.commands" target="_blank" rel="noopener">Add Soyl to your server</a>
+        <a class="btn alt" href="https://discord.gg/mGrPCFavxX" target="_blank" rel="noopener">Join the support server</a>
+      </div>
+      <p>Email: <a href="mailto:bishal4518@yahoo.com">bishal4518@yahoo.com</a></p>
+    </section>
+  </main>
+</div>
+
+<footer>
+  &copy; 2026 Soyl. Not affiliated with Discord Inc.<br>
+  <a href="index.html">Home</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="Soyl_ToS.html">Terms of Service</a> &middot; <a href="https://discord.gg/mGrPCFavxX" target="_blank" rel="noopener">Support server</a>
+</footer>
+
+</body>
+</html>
